@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1574383540 source:c:\users\ceitelabinfo\desktop\tabelanormal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stats.h"
+
+1574383393 source:c:\users\ceitelabinfo\desktop\tabelanormal\csv.c
+	"stats.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574380222 source:c:\users\ceitelabinfo\desktop\tabelanormal\stats.c
+	<math.h>
+
+1574382249 c:\users\ceitelabinfo\desktop\tabelanormal\stats.h
+
