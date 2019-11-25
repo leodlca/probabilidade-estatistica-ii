@@ -6,11 +6,20 @@
  */
 
 
+ #include <stdbool.h>
+
+
 #ifndef STATS_H_INCLUDED
 #define STATS_H_INCLUDED
 
 
-double z_value(double);
+long double z_value_erfc(double, bool);
+
+
+long double z_value_simpson_13(double, bool);
+
+
+long double gaussian_fun(double);
 
 
 #endif // STATS_H_INCLUDED

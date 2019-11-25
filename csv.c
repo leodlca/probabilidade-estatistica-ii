@@ -12,7 +12,7 @@
 #include <string.h>
 
 
-void write_csv(int prec, int low, int top, double step){
+void write_csv(int prec, int low, int top, double step, int algo, bool cum){
     FILE * arq;
     int i, j;
     double k;
@@ -31,10 +31,10 @@ void write_csv(int prec, int low, int top, double step){
     for(k = 0; k + 0.01f < top; k += step) {
         fprintf(arq, "\n%.1f", k);
         for(j = 0; j < 10; j++) {
-            fprintf(arq, ";%.*f", prec, z_value(k + j/100.0));
+            fprintf(arq, ";%.*Lf", prec, algo == 1 ? z_value_erfc(k + j/100.0, cum) : z_value_simpson_13(k + j/100.0, cum));
         }
-
     }
 
     fclose(arq);
 }
+

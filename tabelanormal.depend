@@ -5,6 +5,8 @@
 	<stdbool.h>
 	"stats.h"
 
+1574383393 
+
 1574383393 source:c:\users\ceitelabinfo\desktop\tabelanormal\csv.c
 	"stats.h"
 	<stdio.h>
@@ -15,4 +17,23 @@
 	<math.h>
 
 1574382249 c:\users\ceitelabinfo\desktop\tabelanormal\stats.h
+
+1574719814 source:/home/precision/projects/probabilidade-estatistica-ii/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stats.h"
+
+1574690506 /home/precision/projects/probabilidade-estatistica-ii/stats.h
+	<stdbool.h>
+
+1574719606 source:/home/precision/projects/probabilidade-estatistica-ii/csv.c
+	"stats.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574720772 source:/home/precision/projects/probabilidade-estatistica-ii/stats.c
+	<math.h>
+	<stdbool.h>
 

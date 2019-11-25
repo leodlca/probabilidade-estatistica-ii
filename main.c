@@ -23,7 +23,7 @@ void wait_and_clear(int n) {
 
 
 int main() {
-    int low=0, top=0, prec=0;
+    int low=0, top=0, prec=0, algo=0, cum=0;
     double step=0.1;
 
 	printf("Tabela Normal\n\n");
@@ -84,7 +84,41 @@ int main() {
 		break;
 	}
 
-	write_csv(prec, low, top, step);
+	while(true) {
+        printf("1 - ERCF\n");
+        printf("2 - Simpson 1/3 (pode demorar alguns segundos)\n\n");
+        printf("Insira o algoritmo de solucao desejado [1]: ");
+		scanf(" %d", &algo);
+
+		if(algo <= 0 || algo >= 3) {
+			printf("\nERRO: Opcao invalida selecionada\n\n");
+			wait_and_clear(2);
+			continue;
+		}
+		printf("\n");
+		wait_and_clear(2);
+
+		break;
+	}
+
+	while(true) {
+        printf("1 - 0.0 a 0.5\n");
+        printf("2 - 0.5 a 1.0\n\n");
+        printf("Insira o tipo de tabela desejado [1]: ");
+        scanf(" %d", &cum);
+
+        if(cum <= 0 || cum >= 3) {
+			printf("\nERRO: Opcao invalida selecionada\n\n");
+			wait_and_clear(2);
+			continue;
+		}
+		printf("\n");
+		wait_and_clear(2);
+
+		break;
+	}
+
+	write_csv(prec, low, top, step, algo, cum == 1);
 
     return 0;
 }

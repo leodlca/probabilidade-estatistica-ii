@@ -6,11 +6,15 @@
  */
 
 
+ #include <stdbool.h>
+
+
 #ifndef CSV_H_INCLUDED
 #define CSV_H_INCLUDED
 
 
-void write_csv(int, int, int, double);
+void write_csv(int, int, int, double, int, bool);
 
 
 #endif // CSV_H_INCLUDED
+
