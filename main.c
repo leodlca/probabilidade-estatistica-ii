@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "stats.h"
+#include "csv.h"
 
 
 void wait_and_clear(int n) {
@@ -27,7 +27,7 @@ int main() {
     double step=0.1;
 
 	printf("Tabela Normal\n\n");
-	printf("Esse programa gera uma nova tabela normal no mesmo diretorio onde o arquivo executavel esta localizado. ");
+	printf("Esse programa gera uma nova tabela normal no mesmo diretorio onde o arquivo executavel esta localizado.\n");
 	printf("A tabela sera armazenada no formato CSV.\n\n");
 	printf("OBS: O valor entre colchetes [x] e o valor recomendado para aquela opcao.\n\n");
 
@@ -119,6 +119,11 @@ int main() {
 	}
 
 	write_csv(prec, low, top, step, algo, cum == 1);
+
+	printf("Tabela gerada com sucesso! Procure pelo arquivo `tabela.csv` na raiz do projeto ");
+	printf("ou no diretorio /bin/Debug.\n\n");
+
+	wait_and_clear(2);
 
     return 0;
 }

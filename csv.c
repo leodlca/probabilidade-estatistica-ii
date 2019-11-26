@@ -6,10 +6,10 @@
  */
 
 
-#include "stats.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "stats.h"
 
 
 void write_csv(int prec, int low, int top, double step, int algo, bool cum){
@@ -24,14 +24,14 @@ void write_csv(int prec, int low, int top, double step, int algo, bool cum){
 
     fprintf(arq, "z");
 
-    for(i = low; i < 10; i++) {
+    for(i = 0; i < 10; i++) {
         fprintf(arq, ";%d", i);
     }
 
-    for(k = 0; k + 0.01f < top; k += step) {
+    for(k = low; k + 0.01f < top; k += step) {
         fprintf(arq, "\n%.1f", k);
         for(j = 0; j < 10; j++) {
-            fprintf(arq, ";%.*Lf", prec, algo == 1 ? z_value_erfc(k + j/100.0, cum) : z_value_simpson_13(k + j/100.0, cum));
+            fprintf(arq, ";%.*f", prec, algo == 1 ? z_value_erfc(k + j/100.0, cum) : z_value_simpson_13(k + j/100.0, cum));
         }
     }
 

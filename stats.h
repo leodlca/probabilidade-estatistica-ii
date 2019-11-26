@@ -13,13 +13,13 @@
 #define STATS_H_INCLUDED
 
 
-long double z_value_erfc(double, bool);
+double z_value_erfc(double, bool);
 
 
-long double z_value_simpson_13(double, bool);
+double z_value_simpson_13(double, bool);
 
 
-long double gaussian_fun(double);
+double gaussian_fun(double);
 
 
 #endif // STATS_H_INCLUDED

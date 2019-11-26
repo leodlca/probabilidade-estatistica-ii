@@ -10,23 +10,23 @@
 #include <stdbool.h>
 
 
-long double gaussian_fun(double x) {
+double gaussian_fun(double x) {
     return exp(-pow(x/sqrt(2),2))/sqrt(2*M_PI);
 }
 
 
-long double z_value_erfc(double val, bool cum) {
-    long double z = 0.5 * erfc(-val * M_SQRT1_2) - 0.5;
+double z_value_erfc(double val, bool cum) {
+    double z = 0.5 * erfc(-val * M_SQRT1_2) - 0.5;
     return cum ? z : z + 0.5;
 }
 
 
-long double z_value_simpson_13(double val, bool cum) {
-    long double x=0, y=val;
+double z_value_simpson_13(double val, bool cum) {
+    double x=0, y=val;
     long iterations=1500, i=0;
 
-    long double h = (y-x)/iterations;
-    long double sum = 0;
+    double h = (y-x)/iterations;
+    double sum = 0;
 
     sum += gaussian_fun(x) + gaussian_fun(y);
 

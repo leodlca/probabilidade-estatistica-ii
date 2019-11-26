@@ -6,7 +6,8 @@
  */
 
 
- #include <stdbool.h>
+#include <stdbool.h>
+#include "stats.h"
 
 
 #ifndef CSV_H_INCLUDED

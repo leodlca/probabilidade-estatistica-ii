@@ -5,7 +5,7 @@
 	<stdbool.h>
 	"stats.h"
 
-1574383393 
+1574723768 
 
 1574383393 source:c:\users\ceitelabinfo\desktop\tabelanormal\csv.c
 	"stats.h"
@@ -27,6 +27,8 @@
 1574690506 /home/precision/projects/probabilidade-estatistica-ii/stats.h
 	<stdbool.h>
 
+1574723224 >
+
 1574719606 source:/home/precision/projects/probabilidade-estatistica-ii/csv.c
 	"stats.h"
 	<stdio.h>
@@ -36,4 +38,46 @@
 1574720772 source:/home/precision/projects/probabilidade-estatistica-ii/stats.c
 	<math.h>
 	<stdbool.h>
+
+1574723768 source:c:\users\ceitelabinfo\downloads\probabilidade-estatistica-ii-master\csv.c
+	"stats.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1574722851 c:\users\ceitelabinfo\downloads\probabilidade-estatistica-ii-master\stats.h
+	<stdbool.h>
+
+1574721522 source:c:\users\ceitelabinfo\downloads\probabilidade-estatistica-ii-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stats.h"
+
+1574723224 source:c:\users\ceitelabinfo\downloads\probabilidade-estatistica-ii-master\stats.c
+	<math.h>
+	<stdbool.h>
+
+1574772996 source:/home/precision/projects/probabilidade-estatistica-ii/csv.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stats.h"
+
+1574712052 /home/precision/projects/probabilidade-estatistica-ii/stats.h
+	<stdbool.h>
+
+1574712426 source:/home/precision/projects/probabilidade-estatistica-ii/stats.c
+	<math.h>
+	<stdbool.h>
+
+1574772937 source:/home/precision/projects/probabilidade-estatistica-ii/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"csv.h"
+
+1574773033 /home/precision/projects/probabilidade-estatistica-ii/csv.h
+	<stdbool.h>
+	"stats.h"
 
