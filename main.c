@@ -23,7 +23,8 @@ void wait_and_clear(int n) {
 
 
 int main() {
-    int low=0, top=0, prec=0, algo=0, cum=0;
+    int low=0, top=0, prec=0, algo=0, cum=0, sep_opt=0;
+    char sep=';';
     double step=0.1;
 
 	printf("Tabela Normal\n\n");
@@ -118,12 +119,33 @@ int main() {
 		break;
 	}
 
-	write_csv(prec, low, top, step, algo, cum == 1);
+	while(true) {
+        printf("1 - ;\n");
+        printf("2 - ,\n\n");
+        printf("Insira o caractere separador desejado [1]: ");
+        scanf(" %d", &sep_opt);
+
+		if(sep_opt == 1){
+            sep = ';';
+		} else if (sep_opt == 2){
+            sep = ',';
+		} else {
+            printf("\nERRO: Opcao invalida selecionada\n\n");
+			wait_and_clear(2);
+			continue;
+        }
+		printf("\n");
+		wait_and_clear(2);
+
+		break;
+	}
+
+	write_csv(prec, low, top, step, algo, sep, cum == 1);
 
 	printf("Tabela gerada com sucesso! Procure pelo arquivo `tabela.csv` na raiz do projeto ");
 	printf("ou no diretorio /bin/Debug.\n\n");
 
-	wait_and_clear(2);
+	wait_and_clear(1);
 
     return 0;
 }

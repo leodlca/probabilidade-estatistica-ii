@@ -12,7 +12,7 @@
 #include "stats.h"
 
 
-void write_csv(int prec, int low, int top, double step, int algo, bool cum){
+void write_csv(int prec, int low, int top, double step, int algo, char sep, bool cum){
     FILE * arq;
     int i, j;
     double k;
@@ -25,13 +25,13 @@ void write_csv(int prec, int low, int top, double step, int algo, bool cum){
     fprintf(arq, "z");
 
     for(i = 0; i < 10; i++) {
-        fprintf(arq, ";%d", i);
+        fprintf(arq, "%c%d", sep, i);
     }
 
     for(k = low; k + 0.01f < top; k += step) {
         fprintf(arq, "\n%.1f", k);
         for(j = 0; j < 10; j++) {
-            fprintf(arq, ";%.*f", prec, algo == 1 ? z_value_erfc(k + j/100.0, cum) : z_value_simpson_13(k + j/100.0, cum));
+            fprintf(arq, "%c%.*f", sep, prec, algo == 1 ? z_value_erfc(k + j/100.0, cum) : z_value_simpson_13(k + j/100.0, cum));
         }
     }
 

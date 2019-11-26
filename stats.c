@@ -23,7 +23,7 @@ double z_value_erfc(double val, bool cum) {
 
 double z_value_simpson_13(double val, bool cum) {
     double x=0, y=val;
-    long iterations=1500, i=0;
+    long iterations=2500, i=0;
 
     double h = (y-x)/iterations;
     double sum = 0;

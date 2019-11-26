@@ -14,7 +14,7 @@
 #define CSV_H_INCLUDED
 
 
-void write_csv(int, int, int, double, int, bool);
+void write_csv(int, int, int, double, int, char, bool);
 
 
 #endif // CSV_H_INCLUDED

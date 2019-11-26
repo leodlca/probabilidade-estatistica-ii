@@ -18,24 +18,35 @@
 
 1574382249 c:\users\ceitelabinfo\desktop\tabelanormal\stats.h
 
-1574719814 source:/home/precision/projects/probabilidade-estatistica-ii/main.c
+1574772937 source:/home/precision/projects/probabilidade-estatistica-ii/main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"stats.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"csv.h"
 
-1574690506 /home/precision/projects/probabilidade-estatistica-ii/stats.h
+1574712052 /home/precision/projects/probabilidade-estatistica-ii/stats.h
+	<stdbool.h>
 	<stdbool.h>
 
 1574723224 >
 
-1574719606 source:/home/precision/projects/probabilidade-estatistica-ii/csv.c
+1574772996 source:/home/precision/projects/probabilidade-estatistica-ii/csv.c
 	"stats.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stats.h"
 
-1574720772 source:/home/precision/projects/probabilidade-estatistica-ii/stats.c
+1574712426 source:/home/precision/projects/probabilidade-estatistica-ii/stats.c
+	<math.h>
+	<stdbool.h>
 	<math.h>
 	<stdbool.h>
 
@@ -58,26 +69,30 @@
 	<math.h>
 	<stdbool.h>
 
-1574772996 source:/home/precision/projects/probabilidade-estatistica-ii/csv.c
+1574773033 /home/precision/projects/probabilidade-estatistica-ii/csv.h
+	<stdbool.h>
+	"stats.h"
+
+1574775410 source:c:\users\ldlca\projects\probabilidade-estatistica-ii\csv.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"stats.h"
 
-1574712052 /home/precision/projects/probabilidade-estatistica-ii/stats.h
+1574774180 c:\users\ldlca\projects\probabilidade-estatistica-ii\stats.h
 	<stdbool.h>
 
-1574712426 source:/home/precision/projects/probabilidade-estatistica-ii/stats.c
+1574776012 source:c:\users\ldlca\projects\probabilidade-estatistica-ii\stats.c
 	<math.h>
 	<stdbool.h>
 
-1574772937 source:/home/precision/projects/probabilidade-estatistica-ii/main.c
+1574775583 source:c:\users\ldlca\projects\probabilidade-estatistica-ii\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"csv.h"
 
-1574773033 /home/precision/projects/probabilidade-estatistica-ii/csv.h
+1574775417 c:\users\ldlca\projects\probabilidade-estatistica-ii\csv.h
 	<stdbool.h>
 	"stats.h"
 
